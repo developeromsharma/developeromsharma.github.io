@@ -73,21 +73,37 @@
         }
 
         /* Social Icons */
-        .social-icons {
-            margin-top: 1rem;
-            text-align: center;
-        }
+       /* Clean Social Links */
+.social-links {
+    list-style: none;
+    padding: 0;
+}
 
-        .social-icons a {
-            margin: 0 15px;
-            font-size: 30px;
-            display: inline-block;
-            transition: transform 0.2s;
-        }
+.social-links li {
+    margin-bottom: 10px;
+}
 
-        .social-icons a.linkedin { color: #0077b5; }
-        .social-icons a.github { color: #333; }
-        .social-icons a.topmate { color: #ff9900; }
+.social-links a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.social-links a i {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+.linkedin { color: #0077b5; }
+.github { color: #171515; }
+.topmate { color: #ff6d00; }
+
 
         .social-icons a:hover {
             transform: scale(1.2);
@@ -156,20 +172,26 @@
     </section>
 
     <section id="connect">
-        <h2>Connect with Me</h2>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/developeromsharma/" target="_blank">LinkedIn</a></li>
-            <li><a href="https://github.com/developeromsharma" target="_blank">GitHub</a></li>
-            <li><a href="https://topmate.io/developeromsharma" target="_blank">Topmate (Book a Session)</a></li>
-        </ul>
+    <h2>Connect with Me</h2>
+    <ul class="social-links">
+        <li>
+            <a href="https://www.linkedin.com/in/developeromsharma/" target="_blank">
+                <i class="fab fa-linkedin linkedin"></i> LinkedIn
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/developeromsharma" target="_blank">
+                <i class="fab fa-github github"></i> GitHub
+            </a>
+        </li>
+        <li>
+            <a href="https://topmate.io/developeromsharma" target="_blank">
+                <i class="fas fa-calendar-alt topmate"></i> Topmate (Book a Session)
+            </a>
+        </li>
+    </ul>
+</section>
 
-        <!-- Social Icons with Brand Colors -->
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/developeromsharma/" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/developeromsharma" target="_blank" class="github"><i class="fab fa-github"></i></a>
-            <a href="https://topmate.io/developeromsharma" target="_blank" class="topmate"><i class="fas fa-calendar-alt"></i></a>
-        </div>
-    </section>
 
     <section id="contact">
         <h2>Contact</h2>
