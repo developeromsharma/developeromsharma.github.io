@@ -1,60 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta name="google-site-verification" content="OaAmVZ3KTZEwKHCLMIFUrtFbpsEDuRSkkzJ_qhaOXH0" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Developer Om Sharma - Full Stack Developer Portfolio. Connect with me on LinkedIn, GitHub, and Topmate.">
+    <meta name="description"
+        content="Developer Om Sharma - Full Stack Developer Portfolio. Connect with me on LinkedIn, GitHub, and Topmate.">
     <meta name="keywords" content="Developer Om Sharma, Full Stack Developer, Azure, .NET, React, GitHub, LinkedIn, Topmate">
     <meta name="author" content="Om Sharma">
-    
-
     <title>Developer OM Sharma - Full Stack Developer</title>
+
+    <!-- Font Awesome CDN for social icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
-        header { background-color: #333; color: white; text-align: center; padding: 1rem 0; }
-        section { padding: 2rem; max-width: 800px; margin: auto; }
-        a { color: #0077b5; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        footer { text-align: center; padding: 1rem; background-color: #333; color: white; margin-top: 2rem; }
+        /* Smooth scrolling for navigation */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+
+        /* Sticky Navigation */
+        nav {
+            background-color: #555;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #777;
+        }
+
+        section {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        a {
+            color: #0077b5;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Social Icons */
+        .social-icons {
+            margin-top: 1rem;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            font-size: 28px;
+            display: inline-block;
+        }
+
+        .social-icons a.linkedin { color: #0077b5; }
+        .social-icons a.github { color: #333; }
+        .social-icons a.topmate { color: #ff9900; } /* Chose orange to differentiate */
+
+        .social-icons a:hover {
+            opacity: 0.7;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+            margin-top: 2rem;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 600px) {
+            header img {
+                width: 100px;
+                height: 100px;
+            }
+
+            nav a {
+                float: none;
+                display: block;
+                text-align: center;
+            }
+
+            section {
+                padding: 1rem;
+            }
+        }
     </style>
 </head>
+
 <body>
 
-<header>
-    <img src="image.jpg" alt="Developer OM Sharma" style="width:150px; height:150px; border-radius:50%; object-fit:cover;">
-    <h1>Developer OM Sharma</h1>
-    <p>Full Stack Developer | Cloud Native Solution Developer | Software Engineer</p>
-</header>
+    <header>
+        <img src="image.jpg" alt="Developer OM Sharma">
+        <h1>Developer OM Sharma</h1>
+        <p>Full Stack Developer | Cloud Native Solution Developer | Software Engineer</p>
+    </header>
 
-<section>
-    <h2>About Me</h2>
-    <p>Hello! I am Developer OM Sharma, a passionate Full Stack Developer specializing in .NET, C#, React, and modern web technologies. I love building scalable applications and solving real-world problems.</p>
+    <!-- Sticky Navigation Bar -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#connect">Connect</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-    <p>Cloud Native Solution Developer on Azure with .NET. I have experience building cloud-native applications and resilient infrastructure, with a strong focus on Microsoft Azure. My expertise includes designing and developing microservices-based architectures and delivering full-stack solutions using .NET Core on the backend and ReactJS on the frontend.</p>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I am Developer OM Sharma, a passionate Full Stack Developer specializing in .NET, C#, React, and modern web technologies. I love building scalable applications and solving real-world problems.</p>
 
-    <p>I’m highly motivated, energetic, and driven, with excellent interpersonal skills. I am open to new challenges and committed to continuous learning and growth.</p>
+        <p>Cloud Native Solution Developer on Azure with .NET. I have experience building cloud-native applications and resilient infrastructure, with a strong focus on Microsoft Azure. My expertise includes designing and developing microservices-based architectures and delivering full-stack solutions using .NET Core on the backend and ReactJS on the frontend.</p>
 
-    <p>To know more about my work experience and skills, feel free to connect with me. I will be happy to discuss. Thank you!</p>
-</section>
+        <p>I’m highly motivated, energetic, and driven, with excellent interpersonal skills. I am open to new challenges and committed to continuous learning and growth.</p>
 
-<section>
-    <h2>Connect with Me</h2>
-    <ul>
-        <li><a href="https://www.linkedin.com/in/developeromsharma/" target="_blank">LinkedIn</a></li>
-        <li><a href="https://github.com/developeromsharma" target="_blank">GitHub</a></li>
-        <li><a href="https://topmate.io/developeromsharma" target="_blank">Topmate (Book a Session)</a></li>
-    </ul>
-</section>
+        <p>To know more about my work experience and skills, feel free to connect with me. I will be happy to discuss. Thank you!</p>
+    </section>
 
-<section>
-    <h2>Contact</h2>
-    <p>You can reach me at: <a href="mailto:developeromsharma@gmail.com">developeromsharma@gmail.com</a></p>
-</section>
+    <section id="connect">
+        <h2>Connect with Me</h2>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/developeromsharma/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/developeromsharma" target="_blank">GitHub</a></li>
+            <li><a href="https://topmate.io/developeromsharma" target="_blank">Topmate (Book a Session)</a></li>
+        </ul>
 
-<footer>
-    <p>&copy; 2025 Developer OM Sharma</p>
-</footer>
+        <!-- Social Icons with Brand Colors -->
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/developeromsharma/" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/developeromsharma" target="_blank" class="github"><i class="fab fa-github"></i></a>
+            <a href="https://topmate.io/developeromsharma" target="_blank" class="topmate"><i class="fas fa-calendar-alt"></i></a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>You can reach me at: <a href="mailto:developeromsharma@gmail.com">developeromsharma@gmail.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Developer OM Sharma</p>
+    </footer>
 
 </body>
+
 </html>
